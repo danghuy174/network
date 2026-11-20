@@ -10,6 +10,7 @@ repository holds the issues, the triage process, and public release notes for FL
 |---|---|
 | Anything exploitable — verification bypass, slashing evasion, theft from an escrow, HTLC or voucher flow | **Private** report, per [SECURITY.md](SECURITY.md). Never a public issue. |
 | Applying to run a validator or contribute RPC capacity | [Operator application](../../issues/new?template=operator-application.yml) · [Intake process](OPERATOR-INTAKE.md) |
+| Access only an operator can grant — an allowlist entry, operator quota, gateway allowance or private endpoint | [Access request](../../issues/new?template=access.yml) |
 | A miner or validator misbehaving, crashing, or failing to sync | [Node bug](../../issues/new?template=node-bug.yml) |
 | On-chain behaviour that contradicts the spec — a reward, slash, fee or settlement that came out wrong | [Protocol behaviour](../../issues/new?template=protocol.yml) |
 | The hosted gateway or API returning errors or wrong prices | [Gateway](../../issues/new?template=gateway.yml) |

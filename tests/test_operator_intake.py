@@ -90,6 +90,11 @@ class OperatorIntakeTests(unittest.TestCase):
         )
 
     def test_public_routes_and_documented_intake_labels_exist(self):
+        readme = (ROOT / "README.md").read_text()
+        for path in (ROOT / ".github/ISSUE_TEMPLATE").glob("*.yml"):
+            if path.name == "config.yml":
+                continue
+            self.assertIn(f"template={path.name}", readme)
         for name in ["README.md", "SUPPORT.md", "OPERATOR-INTAKE.md"]:
             self.assertIn(
                 "template=operator-application.yml", (ROOT / name).read_text()
